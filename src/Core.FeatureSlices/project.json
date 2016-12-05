@@ -1,0 +1,23 @@
+﻿{
+  "version": "1.0.1",
+  "authors": [ "antunesl" ],
+  "description": "Organize ASP.NET Core files (Controler and Views) by application feature.",
+  "packOptions": {
+    "repository": {
+      "type": "git",
+      "url": "https://raw.githubusercontent.com/antunesl/aspnetcore-feature-slices/"
+    }
+  },
+
+  "dependencies": {
+    "Microsoft.AspNetCore.Mvc.Razor": "1.0.1",
+    "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0",
+    "NETStandard.Library": "1.6.0"
+  },
+
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
+  }
+}
