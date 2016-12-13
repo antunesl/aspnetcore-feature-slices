@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace Core.FeatureSlices
 {
-    public class FeatureSlicesOptions
+    public class RazorFeaturesOptions
     {
-        public FeatureSlicesOptions()
+        public RazorFeaturesOptions()
         {
             FeatureFolderName = "Features";
-            DeriveFeatureFolderName = null;
             FeatureNamePlaceholder = "{Feature}";
+
+            KeepDefaultViewLocation = true;
+            DeriveFeatureFolderName = null;
         }
 
         /// <summary>
@@ -39,5 +41,6 @@ namespace Core.FeatureSlices
         /// replaces {feature} with the feature path derived from the ControllerModel
         /// </summary>
         public string FeatureNamePlaceholder { get; set; }
+        public bool KeepDefaultViewLocation { get; set; }
     }
 }

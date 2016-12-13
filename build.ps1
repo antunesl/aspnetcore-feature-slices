@@ -11,7 +11,5 @@ function Exec
 }
 
 exec { & dotnet restore }
-
-exec { & dotnet build .\src\Core.FeatureSlices -c Release }
-
-exec { & dotnet pack .\src\Core.FeatureSlices -c Release -o .\artifacts  }
+exec { & dotnet build .\src\Mvc.RazorFeatures -c Release }
+exec { & dotnet pack .\src\Mvc.RazorFeatures -c Release -o .\artifacts  }

@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Core.FeatureSlices
 {
-    public class FeatureViewLocationExpander: IViewLocationExpander
+    public class RazorFeaturesViewLocationExpander: IViewLocationExpander
     {
         private readonly string _placeholder;
 
-        public FeatureViewLocationExpander(FeatureSlicesOptions options)
+        public RazorFeaturesViewLocationExpander(RazorFeaturesOptions options)
         {
             _placeholder = options.FeatureNamePlaceholder;
         }

@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace Core.FeatureSlices
 {
-    public class FeatureControllerModelConvention : IControllerModelConvention
+    public class RazorFeaturesControllerModelConvention : IControllerModelConvention
     {
         private readonly string _folderName;
         private readonly Func<ControllerModel, string> _nameDerivationStrategy;
 
-        public FeatureControllerModelConvention(FeatureSlicesOptions options)
+        public RazorFeaturesControllerModelConvention(RazorFeaturesOptions options)
         {
             _folderName = options.FeatureFolderName;
             _nameDerivationStrategy = options.DeriveFeatureFolderName ?? DeriveFeatureFolderName;
