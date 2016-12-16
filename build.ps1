@@ -13,7 +13,7 @@ function Exec
 exec { & dotnet restore }
 exec { & dotnet build .\src\Mvc.RazorFeatures -c Release }
 
-pushd .\test\Mvc.RazorFeatures.Tests\
+pushd .\tests\Mvc.RazorFeatures.Tests\
 exec { & dotnet test -c Release }
 popd
 
