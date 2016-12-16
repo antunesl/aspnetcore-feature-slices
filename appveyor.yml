@@ -13,7 +13,7 @@ notifications:
 - provider: Email
   to:
   - lr.antunes@gmail.com
-  subject: UseNodeModules Build
+  subject: Mvc.RazorFeatures Build
   on_build_success: true
   on_build_failure: true
   on_build_status_changed: false
