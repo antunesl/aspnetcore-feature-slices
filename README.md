@@ -49,8 +49,8 @@ public Func<ControllerModel, string> DeriveFeatureFolderName { get; set; }
 public string FeatureNamePlaceholder { get; set; }
 
 /// <summary>
-/// Keep default Razor view location behavior, and just add new ViewLocationFormats strings (without clear existing ones)
-/// to get the feature structure behavior.
+/// Keep default Razor view location behavior, and just add new ViewLocationFormats strings 
+/// (without clear existing ones) to get the feature structure behavior.
 /// </summary>
 public bool KeepDefaultViewLocation { get; set; }
 ```
