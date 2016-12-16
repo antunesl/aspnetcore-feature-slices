@@ -12,4 +12,9 @@ function Exec
 
 exec { & dotnet restore }
 exec { & dotnet build .\src\Mvc.RazorFeatures -c Release }
+
+pushd .\test\Mvc.RazorFeatures.Tests\
+exec { & dotnet test -c Release }
+popd
+
 exec { & dotnet pack .\src\Mvc.RazorFeatures -c Release -o .\artifacts  }
