@@ -7,9 +7,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Core.FeatureSlices.Extensions;
+using Mvc.RazorFeatures.Extensions;
 
-namespace Core.FeatureSlices.SampleWebApp
+namespace Mvc.RazorFeatures.SampleWebApp
 {
     public class Startup
     {

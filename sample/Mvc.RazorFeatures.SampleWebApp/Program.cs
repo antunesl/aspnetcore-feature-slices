@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 
-namespace Core.FeatureSlices.SampleWebApp
+namespace Mvc.RazorFeatures.SampleWebApp
 {
     public class Program
     {

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Core.FeatureSlices.SampleWebApp.Features.Home
+namespace Mvc.RazorFeatures.SampleWebApp.Features.Home
 {
     public class HomeController : Controller
     {

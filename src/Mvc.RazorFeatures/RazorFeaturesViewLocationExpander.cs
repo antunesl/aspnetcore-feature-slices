@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Core.FeatureSlices
+namespace Mvc.RazorFeatures
 {
     public class RazorFeaturesViewLocationExpander: IViewLocationExpander
     {
@@ -33,7 +33,7 @@ namespace Core.FeatureSlices
             }
 
             var controllerDescriptor = context.ActionContext.ActionDescriptor as ControllerActionDescriptor;
-            var featureName = controllerDescriptor?.Properties["feature"] as string;
+            var featureName = controllerDescriptor?.Properties[RazorFeaturesControllerModelConvention.FeatureControllerPropertyName] as string;
 
             foreach (var location in viewLocations)
             {

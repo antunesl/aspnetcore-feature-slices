@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Core.FeatureSlices
+namespace Mvc.RazorFeatures
 {
     public class RazorFeaturesOptions
     {
@@ -18,29 +18,34 @@ namespace Core.FeatureSlices
         }
 
         /// <summary>
-        /// The name of the root feature folder on disk (default: 'Features')
+        /// The name of the feature folder. The default value is 'Features'
         /// </summary>
         public string FeatureFolderName { get; set; }
 
         /// <summary>
-        /// Given a ControllerModel object, returns the path to the feature folder.
-        /// Only set this property if you want to override the default logic.
-        /// The default logic takes the namespace of a Controller and assumes the 
-        /// namespace maps to a folder. Examples:
-        ///     Project.Name.Features.Admin.ManageUsers -> Features\Admin\ManageUsers
-        ///     Project.Name.Features.Admin -> Features\Admin
-        /// Note the name "Features" is set by the FeatureFolderName property. 
+        /// Given a ControllerModel, this returns the path for the feature folder, assuming the 
+        /// Feature folder name is given by <see cref="FeatureFolderName"/> property.
+        /// This option allows to override the default behavior. The default behavior takes 
+        /// the namespace of a Controller and assumes the namespace maps to a folder.
         /// </summary>
+        /// <example> 
+        ///     Mvc.RazorFeatures.SampleWebApp.Features.Home => Features\Home
+        ///     Mvc.RazorFeatures.SampleWebApp.Features.Management.UserAccounts => Features\Management\UserAccounts
+        /// </example>
         public Func<ControllerModel, string> DeriveFeatureFolderName { get; set; }
 
 
         /// <summary>
-        /// Used internally in RazorOptions.ViewLocationFormats strings. The Default is {Feature},
-        /// so the first format string in Razor options will be {Feature}\{0}.cshtml. Razor places 
-        /// the view name into the {0} placeholder, the FeatureViewLocationExander class in this project
-        /// replaces {feature} with the feature path derived from the ControllerModel
+        /// The <see cref="RazorFeaturesViewLocationExpander"/> replaces this placeholder with 
+        /// the obtained path from the ControllerModel. The default values is '{Feature}'.
+        /// Note that Razor defines {0} as view Name and {1} as controller.
         /// </summary>
         public string FeatureNamePlaceholder { get; set; }
+
+        /// <summary>
+        /// Keep default Razor view location behavior, and just add new ViewLocationFormats strings (without clear existing ones)
+        /// to get the feature structure behavior.
+        /// </summary>
         public bool KeepDefaultViewLocation { get; set; }
     }
 }

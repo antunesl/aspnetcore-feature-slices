@@ -5,10 +5,11 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Core.FeatureSlices
+namespace Mvc.RazorFeatures
 {
     public class RazorFeaturesControllerModelConvention : IControllerModelConvention
     {
+        public const string FeatureControllerPropertyName = "feature";
         private readonly string _folderName;
         private readonly Func<ControllerModel, string> _nameDerivationStrategy;
 
@@ -26,7 +27,7 @@ namespace Core.FeatureSlices
             }
 
             var featureName = _nameDerivationStrategy(controller);
-            controller.Properties.Add("feature", featureName);
+            controller.Properties.Add(FeatureControllerPropertyName, featureName);
         }
 
         private string DeriveFeatureFolderName(ControllerModel model)

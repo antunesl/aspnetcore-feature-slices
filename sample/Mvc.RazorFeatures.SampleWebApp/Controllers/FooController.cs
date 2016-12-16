@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Core.FeatureSlices.SampleWebApp.Controllers
+namespace Mvc.RazorFeatures.SampleWebApp.Controllers
 {
     public class FooController : Controller
     {
