@@ -9,6 +9,14 @@ branches:
 artifacts:
 - path: .\artifacts\**\*.nupkg
   name: NuGet
+deploy:
+- provider: NuGet
+  api_key:
+    secure: f7cc3517-4c16-4924-8e2b-a80dfe34532e
+  skip_symbols: true
+  on:
+    branch: master
+    appveyor_repo_tag: true
 notifications:
 - provider: Email
   to:
