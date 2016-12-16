@@ -1,5 +1,7 @@
 # Asp.Net Core MVC Razor Features
 
+[![Build status](https://ci.appveyor.com/api/projects/status/micv4h5xs6urcs4f?svg=true)](https://ci.appveyor.com/project/antunesl/mvc-razorfeatures)
+
 **Organize ASP.NET Core MVC project files by Application Feature.**
 
 This was created with inspirations from the [MSDN article from Steve Smith](https://msdn.microsoft.com/en-us/magazine/mt763233.aspx).
