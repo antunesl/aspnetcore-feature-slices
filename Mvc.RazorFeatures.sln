@@ -7,6 +7,7 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Mvc.RazorFeatures", "src\Mv
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B72BA616-3769-4F89-9AE4-8ABC7CDA2FC0}"
 	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
 		build.ps1 = build.ps1
 		global.json = global.json
 		README.md = README.md
