@@ -14,7 +14,7 @@ namespace Mvc.RazorFeatures
             FeatureNamePlaceholder = "{Feature}";
 
             KeepDefaultViewLocation = true;
-            DeriveFeatureFolderName = null;
+            GetFeatureFolder = null;
         }
 
         /// <summary>
@@ -32,7 +32,7 @@ namespace Mvc.RazorFeatures
         ///     Mvc.RazorFeatures.SampleWebApp.Features.Home => Features\Home
         ///     Mvc.RazorFeatures.SampleWebApp.Features.Management.UserAccounts => Features\Management\UserAccounts
         /// </example>
-        public Func<ControllerModel, string> DeriveFeatureFolderName { get; set; }
+        public Func<ControllerModel, string> GetFeatureFolder { get; set; }
 
 
         /// <summary>

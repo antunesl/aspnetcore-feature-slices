@@ -16,7 +16,7 @@ namespace Mvc.RazorFeatures
         public RazorFeaturesControllerModelConvention(RazorFeaturesOptions options)
         {
             _folderName = options.FeatureFolderName;
-            _nameDerivationStrategy = options.DeriveFeatureFolderName ?? DeriveFeatureFolderName;
+            _nameDerivationStrategy = options.GetFeatureFolder ?? DeriveFeatureFolderName;
         }
 
         public void Apply(ControllerModel controller)

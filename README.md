@@ -40,7 +40,7 @@ public string FeatureFolderName { get; set; }
 ///     Mvc.RazorFeatures.SampleWebApp.Features.Home => Features\Home
 ///     Mvc.RazorFeatures.SampleWebApp.Features.Management.UserAccounts => Features\Management\UserAccounts
 /// </example>
-public Func<ControllerModel, string> DeriveFeatureFolderName { get; set; }
+public Func<ControllerModel, string> GetFeatureFolder { get; set; }
 
 
 /// <summary>
