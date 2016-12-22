@@ -128,7 +128,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'MVC-RazorFeatures.tex', 'MVC-RazorFeatures Documentation',
-     'Luís Antunes', 'manual'),
+     'Luis Antunes', 'manual'),
 ]
 
 
