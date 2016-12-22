@@ -47,8 +47,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'MVC-RazorFeatures'
-copyright = '2016, Luís Antunes'
-author = 'Luís Antunes'
+copyright = '2016, Luis Antunes'
+author = 'Luis Antunes'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
